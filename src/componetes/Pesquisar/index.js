@@ -3,39 +3,40 @@ import diacritic from 'diacritic';
 
 const LISTA_DE_ARQUIVOS = [
   {
-    categoria: 'Músicas regionais',
+    categoria: 'Romance',
     arquivos: [
       {
-        titulo: 'Música da Amazonia',
+        titulo: 'Livro 1',
         url: 'https://jjjdjjd',
         autor: 'Autor 1'
       },
       {
-        titulo: 'Música da Bahia',
+        titulo: 'Libro 2',
         url: 'https://jjjdjjd',
         autor: 'Autor 2'
       },
       {
-        titulo: 'Música Manaus',
+        titulo: 'Libro 3',
         autor: 'Autor 3'
       }
     ]
   },
+  
   {
-    categoria: 'Músicas de festividades',
+    categoria: 'HQ',
     arquivos: [
       {
-        titulo: 'Música de Carnaval',
+        titulo: 'Libro 4',
         url: 'https://jjjdjjd',
         autor: 'Autor 4'
       },
       {
-        titulo: 'Música de Festa Junina',
+        titulo: 'Livro 5',
         url: 'https://jjjdjjd',
         autor: 'Autor 5'
       },
       {
-        titulo: 'Música de Natal',
+        titulo: 'Livro 6',
         url: 'https://jjjdjjd',
         autor: 'Autor 6'
       }
