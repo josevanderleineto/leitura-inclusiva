@@ -1,0 +1,17 @@
+.texto {
+    text-align: justify;
+    padding: 50px;
+}
+
+span {
+    font-weight: 900;
+}
+.quemSomos  {
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}
+
+.responsavel {
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}

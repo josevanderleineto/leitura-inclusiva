@@ -1,0 +1,63 @@
+.lupa {
+    text-align: center;
+    margin-top: 40px;
+    display: inline;
+    
+}
+.buscar {
+    height: 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+input {
+    background-color: gray;
+    height: 40rem;
+    width: 70%;
+    text-align: center;
+
+    
+}
+ 
+.list-audio {
+    display: none;
+}
+
+
+.barra-de-busca{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.list-audio{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.item {
+    justify-content: center;
+}
+
+.li {
+    border: 5px solid red;
+    height: 30px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .list-audio {
+        display: flex;
+    }
+
+    .item {
+        justify-content: center;
+        
+    }
+}
+
+
+

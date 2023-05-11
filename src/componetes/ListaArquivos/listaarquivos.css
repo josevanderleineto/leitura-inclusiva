@@ -1,0 +1,89 @@
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+}
+.lupa {
+    text-align: center;
+    margin-top: 40px;
+    display: inline;
+}
+
+.buscar {
+    height: 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    background-color: gray;
+    height: 40rem;
+    width: 70%; 
+}
+
+.list-audio {
+    display: none;
+}
+
+.barra-de-busca{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.list-audio{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.audios {
+}
+
+.categoria {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item {
+    justify-content: center;
+    display: inline;
+    position: relative;
+}
+
+.item span {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.li {
+    border: 5px solid gold;
+    height: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+   
+    .list-audio {
+        display: block;
+        justify-content: s;
+        text-align: center;
+        padding: 20px;
+       
+    }
+
+    .li {
+        padding: 10px;
+
+    }
+
+    
+}

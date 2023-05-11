@@ -1,0 +1,93 @@
+
+.container{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    padding: 14px;
+  }
+  
+  .title{
+    margin-bottom: 14px;
+    color: black;
+  }
+  
+
+  .form{
+    max-width: 37,5rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .input{
+    background-color: #ebedf5;
+    width: 40rem;
+    margin-bottom: 14px;
+    height: 50px;
+    border-radius: 4px;
+    border: 0;
+    padding: 0 8px;
+  }
+  
+  .textarea{
+    background-color: #ebedf5;
+    width: 40rem;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    border: 0;
+    padding: 8px;
+    height: 94px;
+    resize: none;
+  }
+  
+  .button{
+    background-color: #29335c;
+    width: 40rem;
+    height: 34px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;/**/
+    font-size: 18px;
+    transition: background-color, transform 0.8s;
+  }
+  
+  .button:hover{
+    background-color: #c3cae6;
+    transform: scale(1.01);
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .input, .textarea, .button {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .input, .textarea, .button {
+      max-width: 80%;
+      width: 100%;
+      
+    }
+
+    
+
+    .input {
+      height: 80px;
+    }
+
+    .textarea {
+      height: 300px;
+    }
+
+    .button {
+      height: 80px;
+    }
+
+    
+  }
+
