@@ -39,12 +39,12 @@
     border-radius: 4px;
     border: 0;
     padding: 8px;
-    height: 94px;
+    height: 30px;
     resize: none;
   }
   
   .button{
-    background-color: #29335c;
+    background-color: var(--mainColorLight);
     width: 40rem;
     height: 34px;
     border-radius: 4px;
@@ -65,6 +65,7 @@
       max-width: 100%;
       width: 100%;
     }
+
   }
 
   @media screen and (min-width: 1080px) {
@@ -77,15 +78,15 @@
     
 
     .input {
-      height: 80px;
+      height: 70px;
     }
 
     .textarea {
-      height: 300px;
+      height: 200px;
     }
 
     .button {
-      height: 80px;
+      height: 70px;
     }
 
     
