@@ -3,7 +3,7 @@ import diacritic from 'diacritic';
 
 const LISTA_DE_ARQUIVOS = [
   {
-    categoria: 'Bibliteconomia',
+    //categoria: 'Bibliteconomia',
     arquivos: [
       {
         titulo: 'Bibliotecas e Hibridez',
@@ -57,13 +57,14 @@ const ListaArquivos = ({ showAll }) => {
 
       {arquivos.length > 0 ? (
         arquivos.map((categoria, index) => (
-          <div key={index} className='audios'>
+          <div key={index} className='arquivo'>
             <div className='categoria'>{categoria.categoria}</div>
             <ul className='list-arquivo'>
             {categoria.arquivos.map((arquivo, index) => (
               <li key={index} className='li'>
                 <div>
-                  <a className='item title' href={arquivo.url}>{arquivo.titulo}</a>
+                  <a className='link' href={arquivo.url} alt="Link">Baixar</a>
+                  <p className='title'>{arquivo.titulo}</p>
                   <span className='autor'>{arquivo.autor}</span>
                 </div>
               </li>

@@ -34,7 +34,7 @@ const Contato = () => {
 
     return (
         <div className="container">
-          <h1 className="title">Contato</h1>
+          <h2 className="title">Contato</h2>
     
           <form className="form" onSubmit={sendEmail}>
             <input 

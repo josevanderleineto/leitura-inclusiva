@@ -5,6 +5,7 @@
 }
 
 :root {
+    --bg:#b3b7c4;
     --mainColor: #41d3be;
     --mainColorLight: #5767aa;
     --secondaryColor: #2ba9db;

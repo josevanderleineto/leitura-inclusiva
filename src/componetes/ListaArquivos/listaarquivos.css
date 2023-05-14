@@ -21,7 +21,7 @@ h1 {
   }
   
   input {
-    background-color: gray;
+    background-color: var(--texColor);
     height: 40rem;
     width: 70%; 
   }
@@ -64,29 +64,40 @@ h1 {
     text-align: center;
   }
   
+  .title {
+    display: none;
+  }
   .li:nth-child(1) {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKTg5EAbJT79hJih9yu2kEzPpWXllerQdg77uw0qEomc3Qw9LoxCIFo0pIl_4jM9LBTjQ&usqp=CAU');
     background-color: aqua;
-    height: 200px;
+    
+    background-size: cover;
   }
-  
-  
   
   
   .li {
-    border: 5px solid red;
+    border: none;
     height: 30px;
+    height: 200px;
+    width: 170px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--texColor);
+    border: solid 1px gray;
+    border-radius: 8px;
+    background-color: var(--mainColor);
+  }
+
+  .link:hover {
+    background-color: var(--bg);
+    color: black;
+    font-size: 20pt;
+    font-weight: 900;
   }
   
-  footer {
-    background-color: var(--mainColor);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 70px; 
-    color: var(--texColor);
-    text-align: center;
-  }
+  
   
   @media only screen and (max-width: 700px) {  
     .list-arquivo{
