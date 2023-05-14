@@ -4,7 +4,7 @@ const Catalogo = () => {
   return (
     <div>
       <h1>Catálogo</h1>
-      <ListaArquivos />
+      <ListaArquivos/>
     </div>
   );
 }

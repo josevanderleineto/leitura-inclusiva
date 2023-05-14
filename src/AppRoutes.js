@@ -3,7 +3,6 @@ import React from 'react';
 import Header from "./componetes/Header"
 import Sobre from "./componetes/Sobre"
 import Home from "./componetes/Home"
-import './componetes/Pesquisar/pesquisar.css'
 import './componetes/ListaArquivos/listaarquivos.css';
 import Contato from './componetes/Contato';
 import RodaPe from './componetes/RodaPe';

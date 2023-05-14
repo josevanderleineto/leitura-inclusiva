@@ -1,89 +1,103 @@
-
 h1 {
     text-align: center;
     font-weight: 900;
-}
-.lupa {
+  }
+  
+  .lupa {
     text-align: center;
     margin-top: 40px;
     display: inline;
-}
-
-.buscar {
+  }
+  
+  .buscar {
     height: 25px;
     margin: 0 10px;
     border-radius: 5px;
     border: none;
-}
-
-form {
+  }
+  
+  form {
     text-align: center;
-}
-
-input {
+  }
+  
+  input {
     background-color: gray;
     height: 40rem;
     width: 70%; 
-}
-
-.list-audio {
+  }
+  
+  .list-audio {
     display: none;
-}
-
-.barra-de-busca{
+  }
+  
+  .barra-de-busca{
     text-align: center;
     margin-top: 30px;
-}
-
-.list-audio{
+  }
+  
+  .list-arquivo{
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.audios {
-}
-
-.categoria {
+    max-height: calc(100vh - 150px); /* altura máxima da lista */
+    overflow-y: auto; /* barra de rolagem caso a lista ultrapasse a altura máxima */
+  }
+  
+  .categoria {
     display: block;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.item {
+  }
+  
+  .item {
     justify-content: center;
     display: inline;
     position: relative;
-}
-
-.item span {
+  }
+  
+  .item span {
     position: absolute;
     bottom: -30px;
     left: 0;
     right: 0;
     text-align: center;
-}
-
-.li {
-    border: 5px solid gold;
+  }
+  
+  .li:nth-child(1) {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKTg5EAbJT79hJih9yu2kEzPpWXllerQdg77uw0qEomc3Qw9LoxCIFo0pIl_4jM9LBTjQ&usqp=CAU');
+    background-color: aqua;
+    height: 200px;
+  }
+  
+  
+  
+  
+  .li {
+    border: 5px solid red;
     height: 30px;
-}
-
-@media only screen and (max-width: 700px) {
-   
-    .list-audio {
-        display: block;
-        justify-content: s;
-        text-align: center;
-        padding: 20px;
-       
+  }
+  
+  footer {
+    background-color: var(--mainColor);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px; 
+    color: var(--texColor);
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 700px) {  
+    .list-arquivo{
+      display: block;
+      justify-content: s;
+      text-align: center;
+      padding: 20px;
     }
-
+  
     .li {
-        padding: 10px;
-
+      padding: 10px;
     }
-
-    
-}
+  }
+  

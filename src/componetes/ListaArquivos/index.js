@@ -3,49 +3,21 @@ import diacritic from 'diacritic';
 
 const LISTA_DE_ARQUIVOS = [
   {
-    categoria: 'Romace',
+    categoria: 'Bibliteconomia',
     arquivos: [
       {
-        titulo: 'Livro 1',
-        url: 'https://jjjdjjd',
-        autor: 'Autor 1'
-      },
-      {
-        titulo: 'Libro 2',
-        url: 'https://jjjdjjd',
-        autor: 'Autor 2'
-      },
-      {
-        titulo: 'Libro 3',
-        autor: 'Autor 3'
-      }
-    ]
-  },
-  {
-    categoria: 'HQ',
-    arquivos: [
-      {
-        titulo: 'Libro 4',
-        url: 'https://jjjdjjd',
-        autor: 'Autor 4'
-      },
-      {
-        titulo: 'Livro 5',
-        url: 'https://jjjdjjd',
-        autor: 'Autor 5'
-      },
-      {
-        titulo: 'Livro 6',
-        url: 'https://jjjdjjd',
-        autor: 'Autor 6'
+        titulo: 'Bibliotecas e Hibridez',
+        url: 'https://drive.google.com/file/d/1W7KB1zSqfM6gdFajOKdNyUkFLYb1BLGs/view?usp=share_link',
+        autor: ''
       }
     ]
   }
 ]
 
-const Pesquisar = () => {
+
+const ListaArquivos = ({ showAll }) => {
   const [query, setQuery] = useState('');
-  const [arquivos, setArquivos] = useState(LISTA_DE_ARQUIVOS);
+  let [arquivos, setArquivos] = useState(LISTA_DE_ARQUIVOS);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -66,12 +38,10 @@ const Pesquisar = () => {
       return acumulador;
     }, []);
     setArquivos(arquivosFiltrados);
-  }
-
-  
+  };
 
   return (
-    <div>
+    <div id='lupa'>
       <form onSubmit={handleSubmit}>
         <label>
           <img className='lupa list' src='/imagens/lupa.png' alt='Lupa'/>
@@ -79,30 +49,33 @@ const Pesquisar = () => {
             type="text"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            className='pequisar'/>
+            className='pequisar'
+          />
         </label>
-        <button type="submit"  className='buscar'>Buscar</button>
+        <button type="submit" className='buscar'>Buscar</button>
       </form>
 
       {arquivos.length > 0 ? (
         arquivos.map((categoria, index) => (
           <div key={index} className='audios'>
-            <h2 className='categoria'>{categoria.categoria}</h2>
-            <ul className='list-audio'>
+            <div className='categoria'>{categoria.categoria}</div>
+            <ul className='list-arquivo'>
             {categoria.arquivos.map((arquivo, index) => (
               <li key={index} className='li'>
                 <div>
                   <a className='item title' href={arquivo.url}>{arquivo.titulo}</a>
-                  <span className='author'>{arquivo.autor}</span>
+                  <span className='autor'>{arquivo.autor}</span>
                 </div>
               </li>
-))}
+            ))}
             </ul>
           </div>
         ))
      
 
       ) : (
+       
+
         <p>Nenhum resultado encontrado.</p>
       )}
     </div>
@@ -110,5 +83,5 @@ const Pesquisar = () => {
 
 }
 
-export default Pesquisar;
+export default ListaArquivos;
 
