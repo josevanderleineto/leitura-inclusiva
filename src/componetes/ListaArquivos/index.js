@@ -5,11 +5,17 @@ const LISTA_DE_ARQUIVOS = [
   {
     //categoria: 'Bibliteconomia',
     arquivos: [
-      {
+      { 
+
         titulo: 'Bibliotecas e Hibridez',
         url: 'https://drive.google.com/file/d/1W7KB1zSqfM6gdFajOKdNyUkFLYb1BLGs/view?usp=share_link',
         autor: ''
-      }
+      },
+       {
+        titulo: 'Trabalho democracia e participação no Brasil',
+        url: 'https://drive.google.com/file/d/1cTBNxIjOlOGsHYlYlSYuu-PDYdWrrc34/view?usp=share_link',
+        autor: 'Neves, Angela Vieira; Ghiraldelli, Reginaldo'
+       }
     ]
   }
 ]

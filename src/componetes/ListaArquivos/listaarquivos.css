@@ -69,10 +69,17 @@ h1 {
   }
   .li:nth-child(1) {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKTg5EAbJT79hJih9yu2kEzPpWXllerQdg77uw0qEomc3Qw9LoxCIFo0pIl_4jM9LBTjQ&usqp=CAU');
-    background-color: aqua;
     
     background-size: cover;
   }
+
+  .li:nth-child(2) {
+    background-image: url('https://books.scielo.org/id/nzdvb/cover/cover_thumbnail.jpeg');
+    background-size: cover;
+  }
+
+
+  
   
   
   .li {
@@ -80,8 +87,12 @@ h1 {
     height: 30px;
     height: 200px;
     width: 170px;
+  
   }
 
+  .autor {
+    display: none;
+  }
   .link {
     text-decoration: none;
     color: var(--texColor);
