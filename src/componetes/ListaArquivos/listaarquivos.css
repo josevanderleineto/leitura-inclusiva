@@ -87,6 +87,7 @@ h1 {
     height: 30px;
     height: 200px;
     width: 170px;
+    
   
   }
 
@@ -110,13 +111,16 @@ h1 {
   
   
   
-  @media only screen and (max-width: 700px) {  
+  @media only screen and (max-width: 300px) {  
+    
     .list-arquivo{
       display: block;
-      justify-content: s;
+      justify-content: center;
       text-align: center;
       padding: 20px;
     }
+
+    
   
     .li {
       padding: 10px;
