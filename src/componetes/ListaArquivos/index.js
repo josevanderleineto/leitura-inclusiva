@@ -8,12 +8,12 @@ const LISTA_DE_ARQUIVOS = [
       { 
 
         titulo: 'Bibliotecas e Hibridez',
-        url: 'https://drive.google.com/file/d/1W7KB1zSqfM6gdFajOKdNyUkFLYb1BLGs/view?usp=share_link',
-        autor: ''
+        url: 'https://bit.ly/3Wqur47',
+        autor: 'https://bit.ly/3Wqur47'
       },
        {
         titulo: 'Trabalho democracia e participação no Brasil',
-        url: 'https://drive.google.com/file/d/1cTBNxIjOlOGsHYlYlSYuu-PDYdWrrc34/view?usp=share_link',
+        url: 'https://bit.ly/trabalhodedemocracia',
         autor: 'Neves, Angela Vieira; Ghiraldelli, Reginaldo'
        }
     ]
@@ -91,4 +91,3 @@ const ListaArquivos = ({ showAll }) => {
 }
 
 export default ListaArquivos;
-

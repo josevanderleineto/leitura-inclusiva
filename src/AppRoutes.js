@@ -4,7 +4,6 @@ import Header from "./componetes/Header"
 import Sobre from "./componetes/Sobre"
 import Home from "./componetes/Home"
 import './componetes/ListaArquivos/listaarquivos.css';
-import Contato from './componetes/Contato';
 import RodaPe from './componetes/RodaPe';
 import Catalogo from "./componetes/Catalogo";
 
@@ -19,7 +18,6 @@ function AppRoutes() {
                 <Route path="/" element={<Home />} />
                 <Route path="/sobre" element={<Sobre/>} />
                 <Route path="/catalogo" element={<Catalogo/>} />
-                <Route path="/contato" element={<Contato/>} />
                 <Route path="*" element={<div>Página não encontrada</div>} />
               </Routes>
             </BrowserRouter>

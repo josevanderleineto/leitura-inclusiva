@@ -1,129 +1,130 @@
 h1 {
-    text-align: center;
-    font-weight: 900;
-  }
+  text-align: center;
+  font-weight: 900;
+}
+
+.lupa {
+  text-align: center;
+  margin-top: 40px;
+  display: inline;
+}
+
+.buscar {
+  height: 25px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  background-color: var(--texColor);
+  height: 40rem;
+  width: 70%; 
+}
+
+.list-audio {
+  display: none;
+}
+
+.barra-de-busca{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.list-arquivo{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-height: calc(100vh - 150px); /* altura máxima da lista */
+  overflow-y: auto; /* barra de rolagem caso a lista ultrapasse a altura máxima */
+}
+
+.categoria {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item {
+  justify-content: center;
+  display: inline;
+  position: relative;
+}
+
+.item span {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+}
+
+.title {
+  display: none;
+}
+.li:nth-child(1) {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKTg5EAbJT79hJih9yu2kEzPpWXllerQdg77uw0qEomc3Qw9LoxCIFo0pIl_4jM9LBTjQ&usqp=CAU');
   
-  .lupa {
-    text-align: center;
-    margin-top: 40px;
-    display: inline;
-  }
+  background-size: cover;
+}
+
+.li:nth-child(2) {
+  background-image: url('https://books.scielo.org/id/nzdvb/cover/cover_thumbnail.jpeg');
+  background-size: cover;
+}
+
+
+
+
+
+.li {
+  height: 30px;
+  height: 200px;
+  width: 170px;
   
-  .buscar {
-    height: 25px;
-    margin: 0 10px;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  form {
-    text-align: center;
-  }
-  
-  input {
-    background-color: var(--texColor);
-    height: 40rem;
-    width: 70%; 
-  }
-  
-  .list-audio {
-    display: none;
-  }
-  
-  .barra-de-busca{
-    text-align: center;
-    margin-top: 30px;
-  }
+
+}
+
+.autor {
+  display: none;
+}
+.link {
+  text-decoration: none;
+  color: var(--texColor);
+  border: solid 1px gray;
+  border-radius: 8px;
+  background-color: var(--mainColor);
+}
+
+.link:hover {
+  background-color: var(--bg);
+  color: black;
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+
+
+@media only screen and (max-width: 300px) {  
   
   .list-arquivo{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-height: calc(100vh - 150px); /* altura máxima da lista */
-    overflow-y: auto; /* barra de rolagem caso a lista ultrapasse a altura máxima */
-  }
-  
-  .categoria {
     display: block;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .item {
     justify-content: center;
-    display: inline;
-    position: relative;
-  }
-  
-  .item span {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    right: 0;
     text-align: center;
-  }
-  
-  .title {
-    display: none;
-  }
-  .li:nth-child(1) {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKTg5EAbJT79hJih9yu2kEzPpWXllerQdg77uw0qEomc3Qw9LoxCIFo0pIl_4jM9LBTjQ&usqp=CAU');
-    
-    background-size: cover;
+    padding: 20px;
   }
 
-  .li:nth-child(2) {
-    background-image: url('https://books.scielo.org/id/nzdvb/cover/cover_thumbnail.jpeg');
-    background-size: cover;
-  }
+  
 
-
-  
-  
-  
   .li {
-    border: none;
-    height: 30px;
-    height: 200px;
-    width: 170px;
-    
-  
+    padding: 10px;
   }
+}
 
-  .autor {
-    display: none;
-  }
-  .link {
-    text-decoration: none;
-    color: var(--texColor);
-    border: solid 1px gray;
-    border-radius: 8px;
-    background-color: var(--mainColor);
-  }
 
-  .link:hover {
-    background-color: var(--bg);
-    color: black;
-    font-size: 20pt;
-    font-weight: 900;
-  }
-  
-  
-  
-  @media only screen and (max-width: 300px) {  
-    
-    .list-arquivo{
-      display: block;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    
-  
-    .li {
-      padding: 10px;
-    }
-  }
-  

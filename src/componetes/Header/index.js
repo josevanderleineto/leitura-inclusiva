@@ -26,7 +26,6 @@ const Header = () => {
                 <li><HeaderLink className='list'  to='/'>Home</HeaderLink></li>
                 <li><HeaderLink className='list' to='/catalogo'>Catalogo</HeaderLink></li>
                 <li><HeaderLink className='list' to='/sobre'>Sobre</HeaderLink></li>
-                <li><HeaderLink className='list' to='/contato'>Contato</HeaderLink></li>
                 
              </ul>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar} type='submit'>
