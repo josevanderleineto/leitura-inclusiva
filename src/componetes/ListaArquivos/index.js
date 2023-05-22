@@ -8,7 +8,7 @@ const LISTA_DE_ARQUIVOS = [
       { 
 
         titulo: 'Bibliotecas e Hibridez',
-        url: 'https://bit.ly/3Mtrqvg',
+        url: 'https://bit.ly/3BJLOUj',
         autor: ''
       },
        {
