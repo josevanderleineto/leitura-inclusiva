@@ -8,12 +8,12 @@ const LISTA_DE_ARQUIVOS = [
       { 
 
         titulo: 'Bibliotecas e Hibridez',
-        url: 'https://bit.ly/3Wqur47',
-        autor: 'https://bit.ly/3Wqur47'
+        url: 'https://bit.ly/3Mtrqvg',
+        autor: ''
       },
        {
         titulo: 'Trabalho democracia e participação no Brasil',
-        url: 'https://bit.ly/trabalhodedemocracia',
+        url: 'https://bit.ly/3q4O8mg',
         autor: 'Neves, Angela Vieira; Ghiraldelli, Reginaldo'
        }
     ]
